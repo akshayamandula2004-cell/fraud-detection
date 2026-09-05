@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block content %}
+Credit Fraud Detection
+Enter features (Time, Amount, V1, V2, ..., V28):
+
+Enter features: 
+{{ features_input if features_input else '' }}
+{% if error %}
+{{ error }}
+
+{% endif %} Submit
+{% endblock %}
